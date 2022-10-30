@@ -6,7 +6,7 @@ public class BinarySearch {
         int l=0,h=arr.length-1;
         while(l<=h)
         {
-             int m=(l+h)/2;
+             int m=l+(h-l)/2;
              if(x == arr[m])
                 return m;
              else if (x>arr[m])
